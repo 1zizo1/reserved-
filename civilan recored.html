@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>civilan Record</title>
+    <link rel = "icon" type = "image/png" href = "image/reserved.png">
+
+    <!--------- font awesome cdn link  ------->
+    <link rel="stylesheet" href="asets/all.min.css">
+    <!--------- swiper link "for the gallery silder" ------->
+    <link rel="stylesheet" href="asets/swiper-bundle.min.css">
+    <!------------ custom css file link  -------->
+    <link rel="stylesheet" href="css/object-style.css">
+    
+</head>
+
+<body>
+            <!--================IMAGE CONTAINER SECTION============-->
+            <section class="slide">
+                <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide"><img src="image/civil-1.jpg"></div>
+                          <div class="swiper-slide"><img src="image/civil-2.jpg"></div>
+                          <div class="swiper-slide"><img src="image/civil-3.jpg"></div>
+                          ...
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                </div>
+            </section>
+            <!--================HOME SECTION ENDS============-->
+    
+     <!--================stadium INFO SECTION============-->
+        <section class="map-and-info">
+            <h1 class="heading">
+                <span>information</span>
+
+            </h1>
+
+            <div class="row">
+        
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55319.33026904348!2d31.250061799999997!3d29.93749805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584962445a9737%3A0xd203a705f3145a91!2z2YXZg9iq2Kgg2KrZiNir2YrZgiDYp9mE2LTZh9ixINin2YTYudmC2KfYsdmJIC0g2KfYqNmIINin2YTZhtmF2LHYsw!5e0!3m2!1sar!2seg!4v1645307965996!5m2!1sar!2seg" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+        
+                <div class="info">
+                    <div class="field-name">civil status sector</div>
+                    <p>The Civil Status Sector in Egypt is a government agency responsible for maintaining official records related to births, deaths, marriages, and divorces. The agency operates through a network of offices and branches throughout the country and provides a range of services related to civil registration, including issuing official documents and providing support and guidance to families and individuals navigating the legal and administrative processes related to civil registration. The Civil Status Sector plays an essential role in maintaining accurate and up-to-date records of vital events in the lives of Egyptians
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-----------------------------INFO SECTION END--------------------------->
+        <!------------------------resivation table section--------------------->
+        <section id="book-table">
+            <h1 class="heading">
+            <span>reservations</span>
+            </h1>
+            <div class="row">
+                <div class="rev-table">
+                    <p class="table-info">
+                    the table below show the reservations, if the availablity is yes you can reserve your seat 
+                    </p>
+                    <table>
+                        <tr>
+                          <th>available</th>
+                          <th>Username</th>
+                          <th>ticket number</th>
+                          <th>date</th>
+                          <th>from</th>
+                          <th>to</th>
+                        </tr>
+                        <tr>
+                          <td>yes</td>
+                          <td>@example</td>
+                          <td>8</td>
+                          <td>5/3/2020</td>
+                          <td>20:30</td>
+                          <td>22</td>
+                        </tr>
+                        <tr>
+                        <td>yes</td>
+                        <td>@example</td>
+                        <td>9</td>
+                        <td>5/3/2020</td>
+                        <td>20:30</td>
+                        <td>22</td>
+                        </tr>
+                        <tr>
+                        <td>no</td>
+                        <td>@example</td>
+                        <td>10</td>
+                        <td>6/3/2020</td>
+                        <td>18</td>
+                        <td>22</td>
+                        </tr>
+                        <tr>
+                        <td>no</td>
+                        <td>@example</td>
+                        <td>11</td>
+                        <td>5/3/2020</td>
+                        <td>20:30</td>
+                        <td>22</td>
+                        </tr>
+                        <tr>
+                        <td>yes</td>
+                        <td>@example</td>
+                        <td>12</td>
+                        <td>5/3/2020</td>
+                        <td>20:30</td>
+                        <td>22</td>
+                        </tr>
+
+                      </table>
+                </div>
+            </div>
+        </section>
+        <!------------------------resivation table section--------------------->
+
+        <!--================BOOK SECTION============-->
+        <section class="book" id="book">
+            <h1 class="heading">
+            <span>Book now</span>
+            </h1>
+            <!--------------------->
+                <div class="alert alert-danger" role="alert" style="display: none;"></div>
+                <div class="alert alert-success" role="alert" style="display: none;"></div>
+            <!--------------------->
+            <div class="row">
+                <div class="image">
+                    <img src="image/book.svg" alt="">
+                </div>
+        
+                <form action="">
+                   
+                    <div class="inputBox">
+                        <h3>coming for</h3>
+                        <select name="select"> 
+                            <option value="birth-cf">Birth Certificate Extract </option>
+                            <option value="option">Divorce Document Extract</option>
+                            <option value="option">Marriage Document Extract</option>
+                            <option value="option">Death Document Extract</option>
+                            <option value="option">Family Record Extract</option>
+                            <option value="option">National ID Extract</option>
+
+                        </select>
+                        
+                    </div>
+    
+                    <div class="inputBox">
+                        <h3>day</h3>
+                        <input type="date">
+                    </div>
+                    <div class="inputBox">
+                        <h3>arrival</h3>
+                        <input type="time">
+                    </div>
+                    <div class="inputBox">
+                        <h3>leaving</h3>
+                        <input type="time">
+                    </div>
+                    <input type="submit" class="btn" value="book now">
+                </form>
+            </div>
+        </section>    
+        <!--================BOOK SECTION END============-->
+
+     <!--================ADD REVIEW SECTION============-->
+     <section class="add-review" id="add-review">
+    <h1 class="heading">
+        <span>been here?</span>
+    </h1>
+    
+        <div class="row">
+    
+            <div class="image">
+                <img src="image/Feedback.svg" alt="">
+            </div>
+            <form action="">
+
+                <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="send review">
+            </form>
+        </div>
+    </section>
+     <!--================ADD REVIEW SECTION END============-->
+     <!--================stadium REVIEW SECTION============-->
+     <section class="review" id="review">
+
+        <h1 class="heading">
+            <span>Reviews</span>
+        </h1>
+        <div class="swiper-container review-slider">
+    
+            <div class="swiper-wrapper">
+    
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="image/man.png" alt="">
+                        <h3>john deo</h3>
+                        <p>I had a good experience with the Civil Status Sector when I needed to obtain a copy of my birth certificate. The process was straightforward, and the staff were helpful and efficient. I would recommend their services.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="image/man.png" alt="">
+                        <h3>john deo</h3>
+                        <p>I appreciate the helpful and informative staff at the Civil Status Sector. They have been able to provide me with the support and guidance I needed to navigate the process of registering a marriage and obtaining a marriage certificate.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="image/man.png" alt="">
+                        <h3>john deo</h3>
+                        <p>The Civil Status Sector could do a better job of providing information to the public about the requirements for obtaining official documents. I have found the process to be confusing at times, and more clarity would be helpful.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="image/man.png" alt="">
+                        <h3>john deo</h3>
+                        <p>I have had some issues with the Civil Status Sector in the past, particularly related to delays in processing official documents. However, overall, I find their services to be helpful and necessary for navigating the legal and administrative processes related to civil registration.</p>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    <!--================REVIEW SECTION END============-->
+
+        <script src="asets/swiper-bundle.min.js"></script>
+      <!----------------------------script for slide idea!!!!!!!-->
+        </script>
+        <!-- custom js file link  -->
+        <script src="js/object-script.js"></script>
+    
+    
+</body>
+</html>

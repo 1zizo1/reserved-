@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <!------------ custom css file link  -------->
+    <link rel="stylesheet" href="css/object-style.css">
+    <link rel="stylesheet" href="asets/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <section class="profile">
+        <h1 class="heading">
+            <span>my profile</span>
+        </h1>
+    
+        <div class="row">
+            <div class="profile-container" id="profile">
+                <div class="profile-card">
+                    <div class="user-image">
+                        <img src="image/man.png" alt="this image contains user-image">
+                        
+                        <div class="info">
+                            <h4 class="name">ahmed</h4>
+                            <p class="user-username">@example</p>
+                            <h4 class="user-email">example@gmail.com</h4>
+                            <h4>1/1/2001</h4>
+                            <p>111-222-333</p>
+                        </div>
+                        
+                    </div>
+            <!------------------------------------>
+              
+            <div class="card">
+                <div class="update"><button class="update-button">update profile</button></div> 
+                
+            <div class="content">
+               <br>
+                <br>
+                <span class="user-bio">bio</span>
+                <p>Lorem rspiciatis. ibus fuga.</p>
+            </div>        
+            </div>
+        
+            </div>
+            </div>
+      <!-----------------end of profile pic--------->
+            
+            <div class="pop-up" id="myform">
+            <form action="" >
+                <div class="inputBox">
+                    <label for="input-name">Name</label>
+                    <input type="text" placeholder="sief">
+                    <label for="input-phone">phone</label>
+                    <input type="number" placeholder="+20 0111-222-333"> 
+                    </div>
+                 <div class="inputBox">
+                    <label for="input-email">email</label>
+                    <input  type="email" placeholder="user@example.com" >
+                    </div>
+                <div class="inputBox">
+                    <label for="input-username">username</label>
+                    <input  type="text" placeholder="@example" >
+                </div>
+                <div class="inputBox">
+                    <label for="input-photo">add photo</label>
+                    <input type="file">
+                </div>
+                <div class="inputBox">
+                    <label for="input-id">national ID</label>
+                    <input type="number" placeholder="123-456-7891">
+                </div>
+                <div class="aboutbox">
+                <label>bio</label>
+                <input type="text" placeholder="A few words about you ..." class="bio-area">
+            </div>  
+                <!---confirm and cancel button-->
+                <input type="submit" class="submit-button" value="confirm">
+                <button type="button" class="submit-button cancel">Cancel</button>
+            </form>
+        </div>
+        </div>        
+    </section>    
+        <!------------------------- profile SECTION END------------------>    
+    <script>
+        $(document).ready(function(){
+    $(".update-button").click(function(){
+      $("#profile").hide();
+    });
+    $(".update-button").click(function(){
+        $("#myform").show();
+    })
+    $(".cancel").click(function(){
+        $("#myform").hide();
+    })
+    $(".cancel").click(function(){
+        $("#profile").show();
+    })
+  });
+  
+    </script>
+
+
+</body>

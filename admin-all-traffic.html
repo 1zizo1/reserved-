@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic agenceis</title>
+        	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel = "icon" type = "image/png" href = "image/reserved.png">
+
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/object-style.css">
+</head>
+<body>
+<div class="admin">
+    <main id="sidebar">
+        <a href="#" class="brand">
+            <img src="image/reserved.png" alt="">
+            <span class="text">AdminPanal</span>
+        </a>
+        <ul class="side-menu top">
+            <li>
+                <a href="admin.html">
+                    <i class='bx bxs-dashboard bx-burst' ></i>
+                    <span class="text">Dashboard</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="admin-all-cinmeas.html">
+                    <i class='bx bx-location-plus bx-burst'></i>
+                    <span class="text">cinema</span>
+                </a>
+            </li>
+            <li>
+                <a href="admin-all-banks.html">
+                    <i class='bx bx-location-plus bx-burst'></i>
+                    <span class="text">Banks</span>
+                </a>
+            </li>			
+            <li class="active" >
+                <a href="admin-all-traffic.html">
+                    <i class='bx bx-location-plus bx-burst'></i>
+                    <span class="text">traffic agency</span>
+                </a>
+            </li>
+            <li>
+                <a href="admin-all-civil.html">
+                    <i class='bx bx-location-plus bx-burst'></i>
+                    <span class="text">civil recored</span>
+                </a>
+            </li>
+            
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="admin-all-users.html">
+                    <i class='bx bxs-group bx-burst' ></i>
+                    <span class="text">Users</span>
+                </a>
+            </li>
+            <li>
+                <a href="admin-reviews.html">
+                    <!---------------->
+                    <i class='bx bx-message-rounded-minus bx-burst' ></i>
+                    <!---------------->
+                    <span class="text">Reviews</span>
+                </a>
+            </li>
+            <li>
+              <a href="create-new.html">
+                  <!---------------->
+                  <i class='bx bx-location-plus bx-burst' ></i>
+                  <!---------------->
+                  <span class="text">Create new</span>
+              </a>
+          </li>
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bxs-log-out-circle bx-burst' ></i>
+                    <span class="text">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <div id="content">
+        <nav>
+            <i class='bx bx-menu' ></i>
+            <a href="#" class="profile"><img src="image/man.png"></a>
+        </nav>
+
+        <main>
+            <div class="head-title">
+                <div class="left">
+                    <h1>traffic agenceis </h1>
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="index.html">Dashboard</a>
+                        </li>
+                        <li><i class='bx bx-chevron-right' ></i></li>
+                        <li>
+                            <a class="active" href="#">All traffic agenceis</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-----------------table box--------------->
+           
+            <div class="box-container">
+                <div class="box">
+                    <div class="image-container">
+                        <div class="small-image">
+                            <img src="image/traffic-1.jpg" class="small-img-2" alt="">
+                            <img src="image/traffic-2.png" class="small-img-2" alt="">
+                            <img src="image/traffic-4.png" class="small-img-2" alt="">
+                        </div>
+                        <div class="big-image">
+                            <img src="image/traffic-1.jpg" class="big-img-2" alt="">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>electronic traffic agency</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum harum quas quae, provident et corrupti nam ex aperiam saepe nulla!</p>
+                        <a href="traffic agency.html" class="btn"> see more...</a>
+                        <a href="traffic-edit.html" class="btn"> edit</a>
+                        <a href="#" class="cancel-btn">delete</a>
+                    </div>
+                </div>
+            </div>
+    <!------------------------------------------>
+<script>
+document.querySelectorAll('.small-img-1').forEach(image =>{
+    image.addEventListener('click', () =>{
+        var src = image.getAttribute('src');
+        document.querySelector('.big-img-1').src = src;
+    });
+});
+
+document.querySelectorAll('.small-img-2').forEach(image =>{
+    image.addEventListener('click', () =>{
+        var src = image.getAttribute('src');
+        document.querySelector('.big-img-2').src = src;
+    });
+});
+
+document.querySelectorAll('.small-img-3').forEach(image =>{
+    image.addEventListener('click', () =>{
+        var src = image.getAttribute('src');
+        document.querySelector('.big-img-3').src = src;
+    });
+});
+
+document.querySelectorAll('.small-img-4').forEach(image =>{
+    image.addEventListener('click', () =>{
+        var src = image.getAttribute('src');
+        document.querySelector('.big-img-4').src = src;
+    });
+});
+
+</script>
+<script src="js/admin-script.js"></script>
+
+</body>
+</html>

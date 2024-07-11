@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIB</title>
+    <link rel = "icon" type = "image/png" href = "image/reserved.png">
+
+    <!--------- font awesome cdn link  ------->
+    <link rel="stylesheet" href="asets/all.min.css">
+    <!--------- swiper link "for the gallery silder" ------->
+    <link rel="stylesheet" href="asets/swiper-bundle.min.css">
+    <!------------ custom css file link  -------->
+    <link rel="stylesheet" href="css/object-style.css">
+    
+</head>
+
+<body>
+    <!----------------NAVBAR--------------------->
+        <!------------------------NAVBAR END------------------->
+        <!--================IMAGE CONTAINER SECTION============-->
+        <section class="slide">
+            <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img src="image/bank-1.jpeg"></div>
+                      <div class="swiper-slide"><img src="image/bank-2.jpeg"></div>
+                      <div class="swiper-slide"><img src="image/bank-3.jpeg"></div>
+                      ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <!--================HOME SECTION ENDS============-->
+     <!--================stadium INFO SECTION============-->
+        <section class="map-and-info">
+            <h1 class="heading">
+                <span>information</span>
+
+            </h1>
+
+            <div class="row">
+        
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55319.33026904348!2d31.250061799999997!3d29.93749805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584962445a9737%3A0xd203a705f3145a91!2z2YXZg9iq2Kgg2KrZiNir2YrZgiDYp9mE2LTZh9ixINin2YTYudmC2KfYsdmJIC0g2KfYqNmIINin2YTZhtmF2LHYsw!5e0!3m2!1sar!2seg!4v1645307965996!5m2!1sar!2seg" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+        
+                <div class="info">
+                    <div class="field-name">M&K</div>
+                    <p>
+                        CIB (Commercial International Bank) is one of the largest private sector banks in Egypt, offering a wide range of financial products and services to individuals, small businesses, and large corporations. Its services include personal banking, business banking, investment banking, and private banking, and it has a reputation for innovation and customer service. With a large network of branches and ATMs across Egypt, CIB is convenient for customers to access their accounts and conduct transactions. The bank is also committed to corporate social responsibility and supports initiatives in areas such as education, health, and the environment. Overall, CIB is a respected and trusted institution in the Egyptian banking sector.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-----------------------------INFO SECTION END--------------------------->
+        <!------------------------resivation table section--------------------->
+        <section id="book-table">
+            <h1 class="heading">
+            <span>reservations</span>
+            </h1>
+            <div class="row">
+                <div class="rev-table">
+                    <p class="table-info">
+                    the table below show the reservations, if the availablity is yes you can reserve your seat 
+                    </p>
+                    <table>
+                        <tr>
+                          <th>available</th>
+                          <th>Username</th>
+                          <th>ticket number</th>
+                          <th>date</th>
+                          <th>from</th>
+                          <th>to</th>
+                        </tr>
+                        <tr>
+                          <td>yes</td>
+                          <td>@example</td>
+                          <td>8</td>
+                          <td>5/3/2020</td>
+                          <td>20:30</td>
+                          <td>22</td>
+                        </tr>
+                        <tr>
+                        <td>yes</td>
+                        <td>@example</td>
+                        <td>9</td>
+                        <td>5/3/2020</td>
+                        <td>20:30</td>
+                        <td>22</td>
+                        </tr>
+                        <tr>
+                        <td>no</td>
+                        <td>@example</td>
+                        <td>10</td>
+                        <td>6/3/2020</td>
+                        <td>18</td>
+                        <td>22</td>
+                        </tr>
+                        <tr>
+                        <td>no</td>
+                        <td>@example</td>
+                        <td>11</td>
+                        <td>5/3/2020</td>
+                        <td>20:30</td>
+                        <td>22</td>
+                        </tr>
+                        <tr>
+                        <td>yes</td>
+                        <td>@example</td>
+                        <td>12</td>
+                        <td>5/3/2020</td>
+                        <td>20:30</td>
+                        <td>22</td>
+                        </tr>
+
+                      </table>
+                </div>
+            </div>
+        </section>
+        <!------------------------resivation table section--------------------->
+
+        <!--================BOOK SECTION============-->
+        <section class="book" id="book">
+            <h1 class="heading">
+            <span>Book now</span>
+            </h1>
+            <!--------------------->
+                <div class="alert alert-danger" role="alert" style="display: none;"></div>
+                <div class="alert alert-success" role="alert" style="display: none;"></div>
+            <!--------------------->
+            <div class="row">
+                <div class="image">
+                    <img src="image/book.svg" alt="">
+                </div>
+        
+                <form action="">
+                   
+                    <div class="inputBox">
+                        <h3>coming for</h3>
+                        <select name="select"> 
+                            <option value="option">open, use and close a basic payment account</option>
+                            <option value="option">depositing funds</option>
+                            <option value="option">withdrawing cash in an EEA country</option>
+                            <option value="option">Credit and Debit Cards</option>
+                            <option value="option">loan and mortgage services</option>
+                            <option value="option">wealth management</option>
+
+
+                        </select>
+                        
+                    </div>
+    
+                    <div class="inputBox">
+                        <h3>day</h3>
+                        <input type="date">
+                    </div>
+                    <div class="inputBox">
+                        <h3>arrival</h3>
+                        <input type="time">
+                    </div>
+                    <div class="inputBox">
+                        <h3>leaving</h3>
+                        <input type="time">
+                    </div>
+                    <input type="submit" class="btn" value="book now">
+                </form>
+            </div>
+        </section>    
+        <!--================BOOK SECTION END============-->
+
+     <!--================ADD REVIEW SECTION============-->
+     <section class="add-review" id="add-review">
+        <h1 class="heading">
+        <span>been here?</span>
+    </h1>
+    
+        <div class="row">
+    
+            <div class="image">
+                <img src="image/Feedback.svg" alt="">
+            </div>
+            <form action="">
+
+                <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="send review">
+            </form>
+        </div>
+    </section>
+     <!--================ADD REVIEW SECTION END============-->
+     <!--================stadium REVIEW SECTION============-->
+     <section class="review" id="review">
+
+        <h1 class="heading">
+            <span>Reviews</span>
+        </h1>
+        <div class="swiper-container review-slider">
+    
+            <div class="swiper-wrapper">
+    
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="image/man.png" alt="">
+                        <h3>john deo</h3>
+                        <p>I have been a loyal customer of CIB for many years and I have always been impressed with their customer service. Their staff is always friendly and helpful, and they go out of their way to make banking easy and convenient for me. I highly recommend this bank.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="image/man.png" alt="">
+                        <h3>Alex mac</h3>
+                        <p>CIB is a great bank with a strong reputation in the Egyptian banking sector. Their investment banking services are particularly impressive, and I have had a positive experience working with their advisors. I appreciate their commitment to innovation and customer service, and I would recommend them to anyone looking for a comprehensive banking solution.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="image/man.png" alt="">
+                        <h3>john deo</h3>
+                        <p>I have had an account with CIB for a few years now and I have never had any issues. Their online and mobile banking platforms are user-friendly and secure, and their customer service is always prompt and helpful. I highly recommend this bank for anyone looking for a reliable and trustworthy banking partner.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="image/man.png" alt="">
+                        <h3>john deo</h3>
+                        <p>I recently opened a business account with CIB and I am very satisfied with their services. The account setup process was smooth and hassle-free, and their business banking solutions are very comprehensive. I would definitely recommend CIB to any business owner.</p>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    <!--================REVIEW SECTION END============-->
+
+        <script src="asets/swiper-bundle.min.js"></script>
+      <!----------------------------script for slide idea!!!!!!!-->
+        </script>
+        <!-- custom js file link  -->
+        <script src="js/object-script.js"></script>
+    
+    
+</body>
+</html>
